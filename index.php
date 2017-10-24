@@ -41,7 +41,7 @@ Hier kann noch mehr text stehen und ein weiteres Bild. Lorem ipsum dolor sit ame
   <div class="col-xs-18 col-sm-4 text-center footer11"><p class="footer2" ><h3>Footer 2</h3></p></div>
   <!-- Optional: Setze die Floats der XS-Spalten zurück, falls ihr Inhalt nicht gleich hoch ist -->
   <div class="clearfix visible-xs-block"></div>
-	<div class="col-xs-18 col-sm-4 text-center footer11"><p class="footer3"><h3>Social Media</h3><div class="fb-page" data-href="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/" data-tabs="timeline" data-width="350" data-height="320" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/">Schriesheimer Weinkeller</a></blockquote></div></p></div>
+	<div class="col-xs-18 col-sm-4 text-center footer11"><p class="footer3"><h3>Social Media</h3><!--<div class="fb-page" data-href="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/" data-tabs="timeline" data-width="350" data-height="320" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/">Schriesheimer Weinkeller</a></blockquote></div>--></p></div>
 </div>
 <link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-1.11.3.min.js"></script>
