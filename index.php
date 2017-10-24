@@ -2,10 +2,7 @@
 <html>
 <head>
 
-<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
-<script src="js/jquery-1.11.3.min.js"></script>
-<!-- <script src="js/bootstrap.js"></script> -->
-<script src="js/bootstrap-3.3.7.js"></script>
+
 <meta charset="utf-8">
 <meta name="description" content="Wir arbeiten momentan an einer kompletten Überarbeitung unserer Internetpräsenz.">
 <meta name="keywords" content="Schriesheimer Weinkeller,Schriesheim,Weinhandel,Wein,Weinkeller,Baden-Württemberg,Region,Einzelhandel">
@@ -52,7 +49,7 @@
 
 
 <div class="row main1">
-  <div class="col-xs-11 col-sm-5 col-md-7 col-md-offset-1"><h1 class="h11">Schriesheimer WEINKELLER</h1>
+  <div class="col-sm-5 col-md-7 col-md-offset-1 col-xs-9"><h1 class="h11">Schriesheimer WEINKELLER</h1>
 <p><img class="img-responsive pull-left imgspacer" src="img/wine-186018_1920.png" width="240px" alt="404 Weinflasche not found ;-)" />Das ist ein austauschbarer Text der zum Beispiel das Unternehmen mit ein paar Wörtern beschreiben könnte. Auch könnte man hier wissenswertes schreiben und wie man sieht auch ein Bild anzeigen lassen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><br /><br /><h3 class="h11">Unterüberschrift</h3><p>
 Hier kann noch mehr text stehen und ein weiteres Bild. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br /><br /><br /> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 Hier kann noch mehr text stehen und ein weiteres Bild. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -72,7 +69,10 @@ Hier kann noch mehr text stehen und ein weiteres Bild. Lorem ipsum dolor sit ame
   <div class="clearfix visible-xs-block"></div>
 	<div class="col-xs-18 col-sm-4 text-center footer11"><p class="footer3"><h3>Social Media</h3><div class="fb-page" data-href="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/" data-tabs="timeline" data-width="350" data-height="320" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/">Schriesheimer Weinkeller</a></blockquote></div></p></div>
 </div>
-
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- <script src="js/bootstrap.js"></script> -->
+<script src="js/bootstrap-3.3.7.js"></script>
 <link href="css/style.css" rel="stylesheet" >
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
