@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Wir arbeiten momentan an einer kompletten Überarbeitung unserer Internetpräsenz.">
@@ -15,9 +14,10 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+<script src="wdw_suche/wdw_suche.js" type="text/javascript"> </script>
 </head>
 
-<body style="padding-top: 60px">
+<body>
 	<?php require("nav.php"); ?>
 	<div class="row main1">
 		<div class="col-sm-5 col-md-7 col-md-offset-1 col-xs-9">
@@ -57,12 +57,13 @@
 				<!--<div class="fb-page" data-href="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/" data-tabs="timeline" data-width="350" data-height="320" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Schriesheimer-Weinkeller-2013185778937160/">Schriesheimer Weinkeller</a></blockquote></div>-->
 			</p>
 		</div>
-	</div>
+	</div>	
 	<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<!-- <script src="js/bootstrap.js"></script> -->
 	<script src="js/bootstrap-3.3.7.js"></script>
-	<link href="css/style.css" rel="stylesheet">
+	
 	<div id="fb-root"></div>
 	<script>
 		( function ( d, s, id ) {
