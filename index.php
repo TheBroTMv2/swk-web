@@ -5,6 +5,10 @@
 	<meta name="description" content="Wir arbeiten momentan an einer kompletten Überarbeitung unserer Internetpräsenz.">
 	<meta name="keywords" content="Schriesheimer Weinkeller,Schriesheim,Weinhandel,Wein,Weinkeller,Baden-Württemberg,Region,Einzelhandel">
 	<link rel="shortcut icon" href="img/favicon.png">
+	<style type="text/css">
+@media (max-width: 767px){
+}
+    </style>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Schriesheimer WEINKELLER</title>

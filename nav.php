@@ -13,11 +13,11 @@
             <li><a href="#"><span class="glyphicon glyphicon-envelope" ></span>Kontakt</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-road" ></span>Anfahrt</a></li>
         </ul>
-        <form class="navbar-form navbar-right" role="search">
+        <form class="navbar-form navbar-right" role="search" action="suchen.php" method="post">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="submit" class="btn btn-default" value="q">Submit</button>
         </form>
         
       </div>
