@@ -90,7 +90,7 @@ body {
 .navbar {
   position: relative;
   min-height: 60px;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
   border: 1px solid transparent;
 }
 
@@ -619,3 +619,7 @@ color: #fff;
 background-color: #909; 
 border: 1px dotted #909;
 }
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
