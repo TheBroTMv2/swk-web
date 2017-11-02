@@ -7,7 +7,7 @@ $p1 = $_SERVER['SERVER_NAME'];
 $p2 = dirname($_SERVER['PHP_SELF']);
 
 
-if ($p2 == '/' or $p2 == '\\' or $p2 == '.') $p2 = '';
+if ($p2 == '/' or $p2 == '\\' or $p2 == '.') $p2 = 'schriesheimerweinkeller.de';
 
 $pfadinfo = $p1.$p2;        	// URL und Verzeichnis, in dem das Script installiert ist
 	                            // wird nur bei der Anzeige des Pfads verwendet!
@@ -17,7 +17,7 @@ $pfadinfo = $p1.$p2;        	// URL und Verzeichnis, in dem das Script installie
 $installation_path = "wdw_suche"; // nur ändern, wenn die Scriptdateien nicht ins Standardverzeichnis wdw_suche installiert werden.
 
 // Die folgende Anweisung entkommentieren, wenn auf UTF-8 kodierten Seiten Entities für Umlaute verwendet werden:
-// $encoding = "utf";
+ $encoding = "utf";
 
 
 //$query = "/index.php?seite=";	// wenn die durchsuchten Seiten per query string
@@ -93,7 +93,12 @@ $alledirs = true; 		//  $alledirs = true; ACHTUNG: dies verlangsamt die Suche er
 
 // in der folgenden Voreinstellung wird nur ein Beispielverzeichnis ausgeschlossen:
 $exclude_dirs = array(
-	'./test/geheim/'
+	'./css',
+	'./.gitignore',
+	'./fonts',
+	'./wdw_suche',
+	'./js',
+	'./img'
 );	
 
 
@@ -156,7 +161,7 @@ $nach = 90;
 
 
 // soll versucht werden, anstelle des Kontext das meta-tag description auszugeben:
-$show_desc = true;
+$show_desc = false;
 
 // Ziel in neuem Fenster öffnen oder einem bestimmten Frame?
 $target = "";	// "", dann öffnet sich der Link im selben Fenster.
@@ -165,7 +170,7 @@ $target = "";	// "", dann öffnet sich der Link im selben Fenster.
 			// "FENSTERNAME", dann wird ein im Frameset definiertes Fenster benutzt. 
 
 // soll die Trefferseite direkt angesprungen werden, wenn nur 1 Suchergebnis:
-$jump = false; // falls Sie hier true einstellen, lesen Sie bitte unbedingt vorher http://webdesign.weisshart.de/suchen-faq.php#f34
+$jump = true; // falls Sie hier true einstellen, lesen Sie bitte unbedingt vorher http://webdesign.weisshart.de/suchen-faq.php#f34
 
 // Anzahl der Treffer anzeigen:
 $treffer = true;      // $treffer = false; einsetzen, wenn Anzahl der Treffer nicht angezeigt werden soll.
@@ -174,7 +179,7 @@ $treffer = true;      // $treffer = false; einsetzen, wenn Anzahl der Treffer ni
 $pfad = true;       // false einsetzen, wenn der Pfad zum Treffer nicht angezeigt werden soll.
 
 $show_ext = true;	// true: Suche mit Dateiendung  - false: Suche ohne Dateiendung. ACHTUNG! Muss auf true bleiben, außer in ganz speziellen Fällen 
-$prot = "http://";   // Das Protokoll beim Pfad angeben. wenn $prot = "" wird kein Protokoll angezeigt.
+$prot = "https://";   // Das Protokoll beim Pfad angeben. wenn $prot = "" wird kein Protokoll angezeigt.
 
 
 // Änderungsdatum anzeigen:
@@ -187,7 +192,7 @@ $anz_dat = 10;       // kann beliebig hoch gesetzt werden.
 $num_list = true;          // wenn false, dann Aufzählungsliste <ul>
 
 // Suchtipps anzeigen:
-$tipps = true;		// wenn false, dann werden die Suchtipps nicht angezeigt
+$tipps = false;		// wenn false, dann werden die Suchtipps nicht angezeigt
 
 // Anzahl durchsuchter Dateien zeigen:
 $zahlzeig = true;		// wenn false, wird die Zahl durchsuchter Dateien nicht angezeigt.
@@ -196,7 +201,7 @@ $zahlzeig = true;		// wenn false, wird die Zahl durchsuchter Dateien nicht angez
 $dauer = true;		// wenn false, dann wird die Suchdauer nicht angezeigt.
 
 // wenn die Anzeige während der Suche flackert, folgende Variable auf true setzen:
-$gzip = false;
+$gzip = true;
 
 // Anzahl der max. in der searchlog.txt gespeicherten Suchanfragen
 $maxmsg = 100;
@@ -204,7 +209,7 @@ $maxmsg = 100;
 
 
 // die Hintergrundfarbe fuer den Credit-Link
-$bg ="#fffff";
+$bg ="transparent";
 
 ///////////////////////// Meldungen personalisieren /////////////////////
 // im Folgenden können die Textmeldungen des Programms personalisiert werden.

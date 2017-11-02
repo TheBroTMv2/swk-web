@@ -93,7 +93,7 @@ function Highlight() {
 
 	// for site search:
 	// if your search file is not called suchen.*, you must modify the following line 2x! 
-/*	if (document.referrer.search(/suchen.+/) != -1 && document.URL.indexOf("suchen.php") == -1 ) {
+	if (document.referrer.search(/search.+/) != -1 && document.URL.indexOf("search.php") == -1 ) { //hier
 
 //		try { ref = decodeURIComponent(document.referrer); }
 //		catch (e) { ref = unescape(document.referrer); }
@@ -102,7 +102,7 @@ function Highlight() {
 			catch (e) { ref = unescape(window.location.search); }
 		}
 	}
-*/
+
 	if (window.location.search) { 
 		try { ref = decodeURIComponent(window.location.search); }
 		catch (e) { ref = unescape(window.location.search); }
@@ -205,7 +205,7 @@ function searchzeig() {
 
 	zusatz = "?x=";
 	if (append.indexOf("?") != -1) {
-		zusatz = "&amp;q=";
+		zusatz = "&q=";
 	}
 	searchterma = ref.split('q=');
 	if (!searchterma[1]) {
@@ -228,8 +228,8 @@ function searchzeig() {
 		//if (window.location.search.indexOf("nohighlight") == -1) {
 		if (window.location.search.indexOf("nohighlight") == -1 && window.location.href.indexOf('?q=') !== -1) {
 			if (searchterm[0] !== '' && searchterm[0] !== default_value) {
-				//st_content = "<em><a class=\"noverweis\" href=\"" + window.location + zusatz + "nohighlight\">Highlighting der Suchbegriffe entfernen&nbsp;[X]</a></em><br />";
-				st_content = "<em><a class=\"noverweis\" href=\"" + window.location.pathname +  "\">Highlighting der Suchbegriffe entfernen&nbsp;[X]</a></em><br />";
+				//st_content = "<em><a class=\"noverweis\" href=\"" + window.location + zusatz + "nohighlight\">Highlighting der Suchbegriffe entfernen [X]</a></em><br />";
+				st_content = "<em><a class=\"noverweis\" href=\"" + window.location.pathname +  "\">Highlighting der Suchbegriffe entfernen [X]</a></em><br />";
 				//st_content = st_content.replace ('?q=', '');
 			}
 			if (document.getElementById("searchterm")) {

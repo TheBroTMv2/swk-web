@@ -52,6 +52,7 @@ height: 0;
 #searchfooter {
 font-size: .8em;
 margin-top: 1em;
+	background-color: transparent;
 }
 
 #suchtipheader {display:inline-block;}

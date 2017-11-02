@@ -1,7 +1,48 @@
-<?php ob_start(); ?>
+<?php 
+//ob_start(); // auf manchen Servern kann es erforderlich sein, diese Zeile zu entkommenieren
+include("wdw_suche/search_config.php");
+if (isset($_GET["q"]) && $_GET["q"] != "") {	
+	$search_anzeige = stripslashes(htmlspecialchars($_GET["q"], ENT_COMPAT, "utf-8", false)); // PHP 5.4
+} else {
+	$search_anzeige = $value;
+}
+
+
+?>
 <!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
 <html>
 <head>
+<meta name="robots" content="all" /> 
+<link rel="stylesheet" type="text/css" href="wdw_suche/wdw_suche.css" />
+<script src="wdw_suche/wdw_suche.js" type="text/javascript"></script>
+<style>
+html, body, div, p, h1, h2, h3, ul, ol, span, table, td, form, img, li, pre {
+	margin:  0;
+	padding: 0;
+	border: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+body {
+	-webkit-text-size-adjust:none;
+	-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;
+	font-size: 90.01%;
+	margin: 1em;
+	background: #fff;
+}
+h1 {
+	font-size: 1.2em;
+	line-height: 1.6em;
+	margin: 1em 0;
+	color: #111;
+}
+h3 {
+	font-size: .9em;
+	line-height: 1.6em;
+	margin: 1.4em 0 0 0;
+	color: #111;
+}
+</style>
 	<meta charset="utf-8">
 	<meta name="description" content="Wir arbeiten momentan an einer kompletten Überarbeitung unserer Internetpräsenz.">
 	<meta name="keywords" content="Schriesheimer Weinkeller,Schriesheim,Weinhandel,Wein,Weinkeller,Baden-Württemberg,Region,Einzelhandel">
@@ -27,22 +68,15 @@
 	<div class="row main1">
 		<div class="col-sm-5 col-md-7 col-md-offset-1 col-xs-9">
 			<h1 class="h11">Schriesheimer WEINKELLER</h1>
-			<p><img class="img-responsive pull-left imgspacer" src="img/wine-186018_1920.png" width="240px" alt="404 Weinflasche not found ;-)"/>Das ist ein austauschbarer Text der zum Beispiel das Unternehmen mit ein paar Wörtern beschreiben könnte. Auch könnte man hier wissenswertes schreiben und wie man sieht auch ein Bild anzeigen lassen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><br/><br/>
-			<h3 class="h11">Unterüberschrift</h3>
-			<p>
-				Hier kann noch mehr text stehen und ein weiteres Bild. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br/><br/><br/> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Hier kann noch mehr text stehen und ein weiteres Bild. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				<br/>
-			</p>
-		</div>
+			
 
+		</div>
 		<div class="col-xs-4 col-md-3 ">
 			<h2 class="h11">Beispielüberschrift 2</h2>
 			<p>Hier an der Seite kann man z.B: Neuigkeiten anzeigen lassen oder ein Bewertungsfeed etc. <img class="img-responsive pull-right imgspacer img-rounded" src="img/bordeaux-150955.png" width="180px" alt="404 Weinflasche not found ;-)"/>
 			</p><br/>
 		</div>
-
 	</div>
-
 	<div class="row">
 		<div class="footer11 col-xs-18 col-sm-4 text-center ">
 			<p class="footer1">
