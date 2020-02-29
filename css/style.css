@@ -333,7 +333,7 @@ body {
 }
 .navbar-default {
   background-color: #f8f8f8;
-  background-image: url(../img/wood_bar_x.jpg);
+  //background-image: url(../img/wood_bar_x.jpg);
   border-color: transparent;
   background-repeat: repeat-x;
 }
